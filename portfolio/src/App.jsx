@@ -1,15 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import NavigationBar from './components/navigationBar'
+import Button from "@mui/material/Button" 
+
+
 
 function App() {
 
   return (
-    <section className='bg-slate-100 w-screen h-screen flex flex-col justify-center items-center'>
-      <div className='bg-white w-[80%] mt-[10%] rounded-3xl shadow-lg'>
-        
+    <section className='bg-red-100 w-screen h-screen flex flex-col justify-center items-center'>
+      
+      <div className='bg-white w-[60%] mt-[10%] rounded-3xl shadow-lg'>
+
+        <NavigationBar/>
+        <Button  variant="contained">Hello world</Button>;
       </div>
+
     </section>
     
   )
