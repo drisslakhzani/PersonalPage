@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from "../assets/logo_dark.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faMoon } from '@fortawesome/free-solid-svg-icons'
 
 const NavigationBar = () => {
   return (
@@ -11,10 +11,20 @@ const NavigationBar = () => {
        <aside className='flex items-center '>
         <img className='w-[9%]' src={logo} alt='logo'/>
 
-        <div className='text-black text-sm p-1 h-fit hover:bg-[#e45447] hover:text-white w-fit rounded-sm hover:shadow-lg hover:drop-shadow-md shadow-slate-900 hover:-rotate-3 duration-150  '>
-          <FontAwesomeIcon icon={faEnvelope}/>
-          <a className='text-black py-2 px-1 hover:text-white' href='mailto:driss.lakhzani.ds@gmail.com'>driss.lakhzani.ds@gmail.com</a>
+        <div className='flex p-2 text-black items-center' >
+          {/* adress email */}
+          <span className='text-black text-sm hover:text-md p-1 h-fit hover:bg-[#e45447] hover:text-white w-fit rounded-sm hover:shadow-lg hover:drop-shadow-md shadow-slate-900 hover:-rotate-3 duration-150  ' >
+            <FontAwesomeIcon icon={faEnvelope}/>
+            <a className='text-black py-2 px-1 hover:text-white' href='mailto:driss.lakhzani.ds@gmail.com'>driss.lakhzani.ds@gmail.com</a>
+          </span>
+
+          <span><FontAwesomeIcon icon={faMoon}/></span>  
+
+
         </div>
+        
+
+        
        </aside>
 
     </div>
