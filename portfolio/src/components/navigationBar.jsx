@@ -12,10 +12,10 @@ const NavigationBar = () => {
         
 
         <div className='flex p-2 text-gray-700 items-center' >
-        <img className='w-[9%]' src={logo} alt='logo'/>
+        <img className='w-[12%] hover:drop-shadow-lg ' src={logo} alt='logo'/>
 
           {/* adress email */}
-          <span className=' text-[15px] hover:text-[16px] p-1 ml-6 h-fit  hover:bg-[#e45447] hover:text-white w-fit rounded-sm hover:shadow-lg hover:drop-shadow-md shadow-slate-900 hover:-rotate-3 duration-150  ' >
+          <span className=' text-[16px] hover:text-[17px] p-1 ml-6 h-fit  hover:bg-[#e45447] hover:text-white w-fit rounded-sm hover:shadow-lg hover:drop-shadow-md shadow-slate-900 hover:-rotate-3 duration-150  ' >
             <FontAwesomeIcon className='px-1' icon={faEnvelope}/>
             <a className='text-gray-700 py-2 px-1 hover:text-white' href='mailto:driss.lakhzani.ds@gmail.com'>driss.lakhzani.ds@gmail.com</a>
           </span>

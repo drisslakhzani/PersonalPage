@@ -9,7 +9,11 @@
 
 @layer utilities{
     .navIcon{
-        @apply text-gray-700 text-[15px] flex items-center hover:text-[16px] hover:font-bold cursor-pointer p-1 h-fit  hover:bg-[#e45447] hover:text-white w-fit rounded-sm hover:shadow-lg hover:drop-shadow-md shadow-slate-900 hover:-rotate-3 duration-150
+        @apply text-gray-700 text-[16px] flex items-center hover:text-[17px] hover:font-bold cursor-pointer p-1 h-fit  hover:bg-[#e45447] hover:text-white w-fit rounded-sm hover:shadow-lg hover:drop-shadow-md shadow-slate-900 hover:-rotate-3 duration-150
+    }
+    
+    .sideIcons{
+        @apply py-3 cursor-pointer hover:text-[#e45447] duration-200 drop-shadow-md 
     }
     
 }
@@ -17,11 +21,13 @@
 .specialFont{
   font-family:monospace;  
 }
-
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
 .typeWriter{
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid #e45447; /* The typwriter cursor */
-    white-space: wrap; /* Keeps the content on a single line */
+    white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .04em; /* Adjust as needed */
     animation: 
